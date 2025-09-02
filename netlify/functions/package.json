@@ -1,0 +1,14 @@
+{
+  "name": "weather-app-functions",
+  "version": "1.0.0",
+  "description": "Netlify functions for weather app",
+  "main": "weather.js",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "keywords": ["netlify", "functions", "weather", "api"],
+  "author": "",
+  "license": "MIT"
+}

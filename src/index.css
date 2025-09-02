@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #1a202c;
+  }
+}
+
+@layer components {
+  .weather-card {
+    @apply bg-white/90 backdrop-blur-xl border border-white/20 shadow-2xl;
+  }
+  
+  .glass-effect {
+    @apply bg-white/20 backdrop-blur-md border border-white/30;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:-translate-y-2;
+  }
+  
+  .weather-sunny {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  }
+  
+  .weather-cloudy {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  }
+  
+  .weather-rainy {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  }
+  
+  .weather-clear {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  }
+}
